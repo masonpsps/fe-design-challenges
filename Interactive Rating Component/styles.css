@@ -76,11 +76,6 @@ p.prompt {
     justify-content: space-between;
     align-items: center;
 }
-.review-btns input[type="radio"] {
-    /* position: fixed;
-    opacity: 0;
-    pointer-events: none; */
-}
 .rate-btn {
     border-radius: 50%;
     background-color: var(--medium-blue);

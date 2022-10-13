@@ -1,12 +1,9 @@
 const selectedDisplay = document.querySelector('#selection');
 const btns = document.querySelectorAll('.rate-btn');
-// const btns = document.querySelectorAll('input[name="btn-group"]');
 const submitBtn = document.querySelector('.submit-btn');
 const ratingDisplay = document.querySelector('.rating-container');
 const thanksContainer = document.querySelector('.thank-container');
 let selectedBtn = null;
-
-// console.log(btns);
 
 btns.forEach((btn) => {
     btn.addEventListener('click', () => {

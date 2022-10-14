@@ -10,6 +10,11 @@
     --dark-blue-line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
 
+    --shadow-inner: hsl(216, 54%, 4%, 0.2);
+    --shadow-outer: hsl(216, 54%, 4%, 0.1);
+    /* --shadow-inner: hsl(120, 100%, 50%, 0.2);
+    --shadow-outer: hsl(0, 100%, 50%, 0.5); */
+
     --font-size: 18px;
 }
 @font-face {
@@ -55,10 +60,19 @@ main {
     width: 325px;
     padding: 1.5em;
     border-radius: 1em;
+    box-shadow: 
+        0 20px 4px 15px var(--shadow-inner),
+        0 18px 4px 40px var(--shadow-outer);
+}
+.nft-img-container {
+    width: 100%;
+    border-radius: 0.5em;
+    overflow: hidden;
+    height: 325px;
 }
 .nft-img {
     width: 100%;
-    border-radius: 0.5em;
+    /* border-radius: 0.5em; */
 }
 .nft-name {
     color: var(--white);
@@ -96,4 +110,45 @@ main {
 .author-name {
     color: var(--white);
 }
+.eth-icon,
+.clock {
+    position: relative;
+    top: 2px;
+    margin-right: 0.2em;
+}
 
+.overlay {
+    position: relative;
+    top: -165px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.overlay:hover {
+    opacity: 1;
+}
+.overlay img {
+    background-color: #0000;
+    width: 15%;
+    height: 15%;
+    color: var(--white);
+    z-index: 1;
+    opacity: 1;
+}
+.bg-overlay {
+    background-color: var(--cyan);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -166px;
+}
+.author-name:hover,
+.nft-name:hover {
+    color:var(--cyan);
+    cursor: pointer;
+}

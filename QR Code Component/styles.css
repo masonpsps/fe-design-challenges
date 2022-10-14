@@ -8,6 +8,7 @@
     --dark-blue: hsl(218, 44%, 22%);
 
     --font-size: 15px;
+    --corner-rounding: 1em;
 }
 @font-face {
     font-family: 'Outfit';

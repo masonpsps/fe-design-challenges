@@ -1,0 +1,29 @@
+:root {
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --dark-blue-bg: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-size: 18px;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('./fonts/Outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 600;
+}
